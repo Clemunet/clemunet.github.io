@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio de Clément Charbonnel, en reconversion vers le développement d’applications et à la recherche d’une alternance dès janvier 2027."
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="theme-color" content="#ece9e2" />
+    <title>Clément Charbonnel — Portfolio</title>
+    <link rel="stylesheet" href="./style.css?v=35" />
+    <script src="./script.js?v=2" defer></script>
+  </head>
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="haut">
+      <a
+        class="brand"
+        href="#haut"
+        aria-label="Clément Charbonnel, retour en haut"
+        >CC<span class="brand-dot">.</span></a
+      >
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <a href="#cv">CV</a>
+      </nav>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Activer le thème sombre"
+        aria-pressed="false"
+      >
+        <span class="theme-icon" aria-hidden="true">◐</span>
+        <span class="theme-label">Thème</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow hero-top">
+          <span>PORTFOLIO / VIDÉO</span><span>ÉDITION 001</span>
+        </div>
+        <div class="hero-center">
+          <h1 id="hero-title" class="hero-title" aria-label="Portfolio">
+            <span class="title-dark" aria-hidden="true"
+              ><span>P</span><span>o</span><span>r</span><span>t</span></span
+            ><span class="title-accent" aria-hidden="true"
+              ><span>f</span><span>o</span><span>l</span><span>i</span
+              ><span>o</span></span
+            >
+          </h1>
+          <p class="name-tag">Clément Charbonnel</p>
+          <div class="hero-contact">
+            <a
+              class="hero-contact-link"
+              href="mailto:clement.charbonnel.dev@gmail.com"
+              aria-label="Envoyer un courriel à Clément Charbonnel"
+              >ME CONTACTER <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="eyebrow hero-bottom">
+          <span>FAITES DÉFILER POUR EXPLORER</span
+          ><a href="#apropos" aria-label="Voir la présentation">↓</a
+          ><span>CRÉATION / EXPÉRIMENTATION</span>
+        </div>
+      </section>
+
+      <section
+        class="about-brief section-shell"
+        id="apropos"
+        aria-labelledby="about-title"
+      >
+        <h2 class="block-title" id="about-title">01 / À PROPOS DE MOI</h2>
+        <div class="about-card">
+          <div class="about-card-heading">
+            <h3>Bonjour, moi c’est <span>Clément.</span></h3>
+          </div>
+          <p>
+            J’aime comprendre comment les choses fonctionnent, tester et réparer
+            — du matériel aux projets numériques modernes. Mes années dans
+            l’hôtellerie-restauration m’ont appris à m’organiser, à garder du
+            recul et à trouver des solutions aux problémes rencontrés.
+            Aujourd’hui, je me reconvertis dans le développement d’applications
+            : je suis depuis le 15 avril 2026 la formation Concepteur
+            développeur d’applications (Bac+3) au Campus in the Alps.<span
+              class="about-availability"
+              >Je recherche une alternance d’un an en entreprise à partir du 23
+              janvier 2027.</span
+            >
+          </p>
+          <figure class="about-photo">
+            <img
+              src="./images/portrait.png"
+              alt="Portrait de Clément Charbonnel"
+              hidden
+            />
+            <div
+              class="portrait-fallback"
+              role="img"
+              aria-label="Portrait indisponible"
+            >
+              <span>CC.</span>
+              <small>PHOTO INDISPONIBLE</small>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="projects section-shell"
+        id="projets"
+        aria-labelledby="projects-title"
+      >
+        <h2 class="block-title" id="projects-title">02 / PROJETS</h2>
+
+        <div class="project-gallery" aria-label="Galerie de projets vidéo">
+          <div class="gallery-heading">
+            <span>3 PROJETS EN VIDÉO</span>
+          </div>
+          <div class="project-grid" aria-label="Projets vidéo">
+            <article class="project-card">
+              <div class="project-preview preview-one">
+                <button
+                  class="preview-play"
+                  type="button"
+                  data-video="./videos/projet-01.mp4"
+                  data-title="FamillyHub"
+                  aria-label="Lire la vidéo de FamillyHub"
+                >
+                  ▶
+                </button>
+                <button
+                  class="preview-caption"
+                  type="button"
+                  data-details="famillyhub"
+                  aria-label="Voir les détails de FamillyHub"
+                >
+                  + DE DÉTAILS
+                </button>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <span class="project-number">01 / APPLICATION WEB</span>
+                  <h3>FamillyHub</h3>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-preview preview-two">
+                <button
+                  class="preview-play"
+                  type="button"
+                  data-video="./videos/projet-02.mp4"
+                  data-title="Relic Games"
+                  aria-label="Lire la vidéo de Relic Games"
+                >
+                  ▶
+                </button>
+                <button
+                  class="preview-caption"
+                  type="button"
+                  data-details="relic-games"
+                  aria-label="Voir les détails de Relic Games"
+                >
+                  + DE DÉTAILS
+                </button>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <span class="project-number">02 / JEUX WEB</span>
+                  <h3>Relic Games</h3>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-preview preview-three">
+                <button
+                  class="preview-play"
+                  type="button"
+                  data-video="./videos/projet-03.mp4"
+                  data-title="Java Star"
+                  aria-label="Lire la vidéo de Java Star"
+                >
+                  ▶
+                </button>
+                <button
+                  class="preview-caption"
+                  type="button"
+                  data-details="java-star"
+                  aria-label="Voir les détails de Java Star"
+                >
+                  + DE DÉTAILS
+                </button>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <span class="project-number">03 / JEU JAVASCRIPT</span>
+                  <h3>Java Star</h3>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="cv-section section-shell"
+        id="cv"
+        aria-labelledby="cv-title"
+      >
+        <h2 class="block-title" id="cv-title">03 / MON CV</h2>
+        <div class="cv-card">
+          <div class="cv-copy">
+            <p class="cv-eyebrow">PARCOURS / COMPÉTENCES</p>
+            <h3>Mon parcours,<br />en un document.</h3>
+            <p>Consultez ou téléchargez mon CV au format PDF.</p>
+            <a
+              class="cv-download"
+              href="./documents/cv-clement-charbonnel.pdf"
+              download
+              >Télécharger mon CV <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <button
+            class="cv-preview"
+            type="button"
+            aria-label="Agrandir l’aperçu du CV"
+          >
+            <img
+              src="./images/cv-apercu.png"
+              alt="Aperçu du CV de Clément Charbonnel"
+              loading="lazy"
+            />
+            <span>Agrandir le CV <span aria-hidden="true">↗</span></span>
+          </button>
+          <div class="cv-sheet" aria-hidden="true">
+            <span class="cv-sheet-mark">CC.</span>
+            <span class="cv-sheet-title">CURRICULUM VITAE</span>
+            <span class="cv-sheet-line"></span>
+            <span class="cv-sheet-line"></span>
+            <span class="cv-sheet-line short"></span>
+            <span class="cv-sheet-divider"></span>
+            <span class="cv-sheet-line"></span>
+            <span class="cv-sheet-line short"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <span>© <span id="year">2026</span> CLÉMENT CHARBONNEL</span>
+      <a href="#haut">RETOUR EN HAUT ↑</a>
+    </footer>
+
+    <dialog class="video-dialog" aria-label="Lecture de la vidéo">
+      <div class="dialog-header">
+        <span class="dialog-title">Projet</span
+        ><button
+          class="dialog-close"
+          type="button"
+          aria-label="Fermer la vidéo"
+        >
+          ✕
+        </button>
+      </div>
+      <video controls playsinline preload="none"></video>
+      <p class="dialog-error" role="alert" hidden>
+        La vidéo de ce projet est momentanément indisponible.
+      </p>
+    </dialog>
+    <dialog class="details-dialog" aria-labelledby="details-title">
+      <div class="details-header">
+        <span class="details-kicker">EN SAVOIR PLUS / PROJET</span>
+        <button
+          class="details-close"
+          type="button"
+          aria-label="Fermer les détails"
+        >
+          ✕
+        </button>
+      </div>
+      <div class="details-body">
+        <h2 id="details-title"></h2>
+        <p class="details-description"></p>
+        <h3>Technologies utilisées</h3>
+        <ul class="details-tech"></ul>
+      </div>
+    </dialog>
+    <dialog class="cv-dialog" aria-labelledby="cv-dialog-title">
+      <div class="cv-dialog-header">
+        <h2 id="cv-dialog-title">Mon CV</h2>
+        <button
+          class="cv-dialog-close"
+          type="button"
+          aria-label="Fermer l’aperçu du CV"
+        >
+          ✕
+        </button>
+      </div>
+      <div class="cv-dialog-body">
+        <img
+          src="./images/cv-apercu.png"
+          alt="CV de Clément Charbonnel en grand format"
+        />
+      </div>
+      <a
+        class="cv-dialog-download"
+        href="./documents/cv-clement-charbonnel.pdf"
+        download
+        >Télécharger le PDF ↓</a
+      >
+    </dialog>
+  </body>
+</html>
